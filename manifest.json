@@ -1,0 +1,20 @@
+{
+  "id": "versaocristal",
+  "name": "Versao Cristal",
+  "version": "0.46.0",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "category": "LANGUAGE",
+  "games": [
+    "crystal"
+  ],
+  "game_version": ">=0.0.0-0 <2.0.0",
+  "language": true,
+  "priority": 100,
+  "dependencies": [],
+  "optional_dependencies": [],
+  "conflicts": [],
+  "github": "LordSangreal/versaocristal-ptbr",
+  "description": "Portugues brasileiro para Pokemon Crystal no Gen2Recomped. Traducao propria, escrita do ingles original. Golpes, Pokemon, itens, TM e HM ficam no original."
+}

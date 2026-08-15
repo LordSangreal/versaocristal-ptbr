@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-15T21:00:00Z",
+  "count": 1,
+  "categories": [
+    "LANGUAGE"
+  ],
+  "mods": [
+    {
+      "folder": "LordSangreal@versaocristal",
+      "id": "versaocristal",
+      "title": "Versao Cristal",
+      "author": "LordSangreal",
+      "version": "0.46.0",
+      "categories": [
+        "LANGUAGE"
+      ],
+      "repo": "https://github.com/LordSangreal/versaocristal-ptbr",
+      "summary": "Pokemon Crystal em portugues brasileiro. Traducao propria; nomes de golpes no original.",
+      "tags": [
+        "portuguese",
+        "brazilian",
+        "translation",
+        "crystal",
+        "gen2"
+      ],
+      "github": "LordSangreal/versaocristal-ptbr",
+      "permissions": [],
+      "api": 2,
+      "profile": "content",
+      "games": [
+        "crystal"
+      ],
+      "description_url": "data/mods/LordSangreal@versaocristal/description.md",
+      "latest": {
+        "version": "0.46.0",
+        "tag": "v0.46.0",
+        "name": "Versao Cristal 0.46.0 -- repositorio proprio",
+        "prerelease": false,
+        "published_at": "2026-08-15T21:00:00Z",
+        "zip": {
+          "name": "versaocristal-0.46.0.zip",
+          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.0/versaocristal-0.46.0.zip",
+          "size": 0
+        }
+      },
+      "update_check": "ok"
+    }
+  ]
+}
