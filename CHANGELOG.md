@@ -2,6 +2,31 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.3
+
+**As falas agora sao as do Crystal, nao as do Gold.**
+
+O catalogo nasceu de um crosswalk feito em cima do **Gold**, e onde o mesmo
+rotulo existe nos dois jogos com texto em ingles diferente, o que estava
+gravado era a fala do Gold traduzida -- o jogador de Crystal lia uma fala
+que o NPC nao diz. Os alias das versoes 0.46.1/0.46.2 herdaram esse erro e
+o espalharam para mais slots.
+
+- **152 falas reescritas a partir do ingles do Crystal**, propagadas para
+  **398 slots** (rotulo nomeado + todos os alias que compartilham o mesmo
+  texto).
+- Casos como o pai do BILL ("Meu pai nao trabalha, so enrola o dia todo" --
+  antes dizia "Eu fazia testes com um TELEPORTER"), a CLAIR entregando a
+  badge, a mae do BILL, o DAY-CARE MAN, o santuario da ILEX FOREST, a fala
+  de abertura do PROF.ELM, o MORTY e o LT.SURGE.
+- Sobram 23 slots marcados, todos placeholder generico do motor ("You read
+  the sign"), grito de especie ou lixo de extracao -- nao ha fala real
+  restante com o texto do Gold.
+
+Como foi detectado: se a traducao gravada num rotulo era identica a
+traducao usada para o texto do **Gold** daquele mesmo rotulo, entao ela era
+derivada do Gold. Isso da uma lista exata em vez de um palpite.
+
 ## 0.46.2
 
 **Corrigido de verdade: NPCs e placas em ingles no aparelho, mesmo com a

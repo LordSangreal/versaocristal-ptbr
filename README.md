@@ -31,20 +31,13 @@ Pokemon Crystal para o aplicativo importar.
 do motor, grito de especie e afins), medida com a mesma logica de resolucao
 que o motor usa (`Data:resolveText`).
 
-### Pendencia conhecida: 555 falas com o texto do Gold
+### As falas sao as do Crystal
 
-Este mod nasceu do catalogo do Gold (ver abaixo), e **555 falas ainda
-carregam a versao do Gold daquele dialogo** em vez da versao do Crystal.
-Sao rotulos que existem nos dois jogos com texto diferente -- as vezes so
-uma palavra, as vezes a fala inteira:
-
-| Rotulo | Crystal diz | Este mod ainda mostra |
-|---|---|---|
-| `BillPopWontWorkText` | "Meu pai nao trabalha, so enrola o dia todo" | "Eu fazia testes com um TELEPORTER" |
-| `BlackthornYoungsterText` | "Mestres de dragao vem de BLACKTHORN" | "Vou me tornar um usuario de dragao" |
-
-Esta na fila para reescrita a partir do ingles do Crystal. A lista completa
-esta no CHANGELOG.
+O mod nasceu do catalogo do Gold, e ate a 0.46.2 centenas de falas
+carregavam a versao do **Gold** daquele dialogo -- rotulos que existem nos
+dois jogos com texto diferente. A 0.46.3 reescreveu 152 falas a partir do
+ingles do Crystal, propagadas para 398 slots. O que sobra marcado sao 23
+placeholders genericos do motor e gritos de especie, sem fala real.
 
 O que ainda nao foi traduzido **aparece em ingles**, nunca em branco nem
 cortado: o mod so substitui o que tem traducao pronta, entao o jogo e
