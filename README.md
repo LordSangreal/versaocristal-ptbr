@@ -21,7 +21,7 @@ Pokemon Crystal para o aplicativo importar.
 
 | O que | Quanto |
 |---|---|
-| Falas do jogo | 5206 |
+| Falas do jogo | 7608 |
 | Rotulos de menu e batalha | 645 |
 | Descricoes de golpe | 251 |
 | Descricoes de item | 161 |
@@ -177,7 +177,7 @@ daquele trabalho -- o credito fica como agradecimento.
 main.lua                    registra os overrides quando o jogo abre
 manifest.json               quem o mod e e para qual jogo
 
-lang/dialogue.lua           5206 falas; chave = rotulo nomeado
+lang/dialogue.lua           7608 falas; chave = rotulo nomeado
                              (MomGivesPokegearText) ou TEXT_S<banco>_<endereco>
 lang/strings.lua            645 textos do motor: batalha, menus, opcoes,
                              avisos de entrada em rota/cidade, atributos

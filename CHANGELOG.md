@@ -2,6 +2,35 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.2
+
+**Corrigido de verdade: NPCs e placas em ingles no aparelho, mesmo com a
+0.46.1 instalada.**
+
+Quando o extrator do Gen2Recomped nao resolve um rotulo nomeado para um
+ponteiro, ele grava a fala sob a forma mecanica
+`TEXT_S<BANCO>_<ENDERECO>` -- e `Data:resolveText` busca por essa chave.
+O catalogo do Crystal foi montado a partir dos rotulos nomeados e tinha
+**2 dessas 3237 chaves**. Onde a extracao usa a forma mecanica, a fala
+caia no ingles mesmo estando traduzida.
+
+Isso depende de como cada instalacao extraiu a ROM, e e por isso que o
+desktop mostrava tudo certo e o Android nao: la varias entradas resolviam
+pelo rotulo nomeado, aqui pela forma mecanica.
+
+- **+2402 alias `TEXT_S<banco>_<endereco>`**, casados pelo texto em ingles
+  com a traducao que ja existia (5206 -> 7608 chaves). Sao gerados do cache
+  **deste** jogo: o endereco muda entre Gold e Crystal, entao a chave de um
+  nao serve no outro.
+- As duas falas das telas relatadas -- a placa "CIDADE DE NEW BARK / A
+  cidade onde os ventos do recomeco sopram" e o vizinho "Soube que o PROF.
+  ELM descobriu novos POKéMON" -- agora resolvem pelas tres formas de chave
+  (rotulo nomeado, constante do mapa e `TEXT_S*`).
+
+O Gold ja tinha 2267 dessas chaves, herdadas do crosswalk da 0.44.0 (que
+foi feito em cima dos enderecos do Gold) -- por isso ele nao sofria o mesmo
+problema. Faltavam 10, tambem incluidas.
+
 ## 0.46.1
 
 **Corrigido: NPCs e placas apareciam em ingles mesmo com a fala traduzida.**
