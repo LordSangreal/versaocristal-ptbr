@@ -2,6 +2,34 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.1
+
+**Corrigido: NPCs e placas apareciam em ingles mesmo com a fala traduzida.**
+
+O motor resolve a fala de um objeto/placa em `Data:resolveText`
+(`src/core/Data.lua`): pega `text_pointers[MAPA][TEXT_*]` e busca
+`data.text[entry.text]`. Acontece que `entry.text` muitas vezes **e a
+propria constante do mapa** (`TEXT_PLAYERS_HOUSE1_F_OBJ_005`), nao o rotulo
+nomeado (`PlayersHouse1FStoveText`). O catalogo so tinha os rotulos
+nomeados, entao essas falas caiam no ingles -- mesmo as que ja estavam
+traduzidas ha varias versoes.
+
+A auditoria de cobertura anterior nao pegava isso porque media so o campo
+`label` das entradas, e nao a chave que o motor realmente busca. Refeita
+com a logica do `resolveText`, a cobertura real era **92,1%**, nao os 99,4%
+que o README anunciava.
+
+- **+204 chaves**: 190 alias (a mesma traducao sob a constante do mapa,
+  casada pelo texto em ingles; prefixo de codigo de controle preservado --
+  os pontinhos de pausa e tokens como `{PC}`/`&{USER}` fazem parte da fala)
+  e 14 falas que faltavam de verdade, traduzidas agora. Entre elas a
+  vizinha no inicio do jogo ("Bom dia, {PLAYER}! Estou de visita!"), a
+  FLORIA da FLOWER SHOP, o marinheiro do OLIVINE CAFE que ensina STRENGTH,
+  a neta do KURT e a placa de regras da BATTLE TOWER.
+- **Cobertura real: 92,1% -> 99,1%.** As 27 que sobram sao grito de especie
+  e entradas sem texto nenhum no cache do motor (script asm), que nao tem o
+  que traduzir.
+
 ## 0.46.0
 
 **Primeira versao como repositorio proprio.** O Crystal era traduzido dentro
