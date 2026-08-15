@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-15T21:13:29Z",
+  "generated_at": "2026-08-15T21:28:36Z",
   "count": 1,
   "categories": [
     "LANGUAGE"
@@ -11,7 +11,7 @@
       "id": "versaocristal",
       "title": "Versao Cristal",
       "author": "LordSangreal",
-      "version": "0.46.1",
+      "version": "0.46.2",
       "categories": [
         "LANGUAGE"
       ],
@@ -33,15 +33,15 @@
       ],
       "description_url": "data/mods/LordSangreal@versaocristal/description.md",
       "latest": {
-        "version": "0.46.1",
-        "tag": "v0.46.1",
-        "name": "Versao Cristal 0.46.1 -- NPCs e placas",
+        "version": "0.46.2",
+        "tag": "v0.46.2",
+        "name": "Versao Cristal 0.46.2 -- alias TEXT_S",
         "prerelease": false,
-        "published_at": "2026-08-15T21:13:29Z",
+        "published_at": "2026-08-15T21:28:36Z",
         "zip": {
-          "name": "versaocristal-0.46.1.zip",
-          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.1/versaocristal-0.46.1.zip",
-          "size": 218650
+          "name": "versaocristal-0.46.2.zip",
+          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.2/versaocristal-0.46.2.zip",
+          "size": 312661
         }
       },
       "update_check": "ok"
