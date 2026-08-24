@@ -22,7 +22,7 @@ Pokemon Crystal para o aplicativo importar.
 | O que | Quanto |
 |---|---|
 | Falas do jogo | 7609 |
-| Rotulos de menu e batalha | 645 |
+| Rotulos de menu e batalha | 1090 |
 | Descricoes de golpe | 251 |
 | Descricoes de item | 161 |
 | Glifos acentuados desenhados | 25 |

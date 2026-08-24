@@ -2,6 +2,14 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.6
+
+**Sincronizado o catalogo do motor com a traducao Gold.**
+
+- As **1.085 chaves inglesas compartilhadas** agora usam exatamente as mesmas traducoes corrigidas do Gold.
+- Adicionadas **441 chaves** que ja estavam traduzidas no Gold e faltavam no Crystal.
+- Mantidas as 5 chaves exclusivas do Crystal, como a selecao de genero e os rotulos do relogio.
+
 ## 0.46.5
 
 **Traduzido o relogio da configuracao inicial.**
