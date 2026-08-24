@@ -492,6 +492,7 @@ return {
   ["battle|RUN"] = "FUG",
   ["be forgotten?"] = "deve ser esquecido",
   ["champion!"] = "campeão!",
+  ["It's a TV."] = "É uma TV.",
   ["completed the"] = "completou a",
   ["disabled!"] = "desabilitado!",
   ["host to choose..."] = "anfitrião escolher...",
