@@ -2,6 +2,14 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.47.1
+
+**Diálogos da introdução do PROF. ELM no Crystal.**
+
+- Traduzidas todas as falas exclusivas do PROF. ELM na introdução do Pokémon Crystal (`1e:50fa`, `1e:511a`, `1e:513a`, `1e:51ae`, `1e:51df`, `1e:52ff`), incluindo a chegada do e-mail do MR. POKéMON e a escolha do Pokémon inicial.
+- Traduzidas as falas do rooftop shopping e treinadores do Bank 1E (`1e:4532`, `1e:4743`, `1e:4765`, `1e:435e`).
+- Conclusão de 100% de cobertura de todas as falas do Bank 1E.
+
 ## 0.47.0
 
 **Compatibilidade total de ponteiros, falas da vizinha/New Bark e expansão de diálogos no motor.**
