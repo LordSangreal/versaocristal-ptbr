@@ -11,7 +11,7 @@
       "id": "versaocristal",
       "title": "Versao Cristal",
       "author": "LordSangreal",
-      "version": "0.46.8",
+      "version": "0.46.9",
       "categories": [
         "LANGUAGE"
       ],
@@ -33,15 +33,15 @@
       ],
       "description_url": "data/mods/LordSangreal@versaocristal/description.md",
       "latest": {
-        "version": "0.46.8",
-        "tag": "v0.46.8",
-        "name": "Versao Cristal 0.46.8 -- radio traduzido",
+        "version": "0.46.9",
+        "tag": "v0.46.9",
+        "name": "Versao Cristal 0.46.9 -- padronizacao de Cinnabar",
         "prerelease": false,
-        "published_at": "2026-08-15T21:46:21Z",
+        "published_at": "2026-08-24T17:38:00Z",
         "zip": {
-          "name": "versaocristal-0.46.8.zip",
-          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.8/versaocristal-0.46.8.zip",
-          "size": 310772
+          "name": "versaocristal-0.46.9.zip",
+          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.9/versaocristal-0.46.9.zip",
+          "size": 319451
         }
       },
       "update_check": "ok"
