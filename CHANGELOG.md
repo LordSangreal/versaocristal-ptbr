@@ -2,6 +2,12 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.10
+
+**Pontos de referencia do Mapa e Banners.**
+
+- Adicionado o catalogo `lang/landmarks.lua` com todos os locais de Johto e Kanto traduzidos (ex: `TORRE SPROUT`, `TORRE DE RÁDIO`, `TORRE QUEIMADA`, `TORRE TIN`, `CAVERNA UNION`, `POÇO SLOWPOKE`, `FLORESTA ILEX`, `PARQUE NACIONAL`, `RUÍNAS DE ALPH`, `MONTE MORTAR`, `CAVERNA ESCURA`, `LAGO DA FÚRIA`, `CATARATAS TOHJO`, `ESTRADA DA VITÓRIA`, `MONTE MOON`, `TÚNEL DE PEDRA`, `ILHAS REDEMOINHO`, `CAMINHO DE GELO`, `COVIL DO DRAGÃO`, `USINA DE ENERGIA`, `FAROL`, `NAVIO S.S. AQUA`, `CAVERNA DE SILVER`).
+
 ## 0.46.9
 
 **Padronizacao da Ilha de Cinnabar.**

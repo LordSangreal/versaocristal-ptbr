@@ -117,6 +117,9 @@ return function(mod)
   n = n + each("item_names", function(id, value)
     mod.content.items:patch(id, { name = value })
   end)
+  n = n + each("landmarks", function(id, value)
+    mod.content.landmarks:patch(id, { name = value })
+  end)
   -- O status tem dois rotulos: o do texto e o de tres letras que cabe na
   -- caixinha ao lado da barra de vida.  Trocar so o primeiro deixaria o HUD
   -- em ingles, que e justamente onde o rotulo mais aparece.
