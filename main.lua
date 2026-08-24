@@ -99,14 +99,22 @@ return function(mod)
   end
 
   -- ---- aplicacao -----------------------------------------------------
-  -- Chave = rotulo nomeado da desmontagem, ou TEXT_S<banco>_<endereco>
-  -- quando o extrator nao resolve rotulo.  E o formato do Gen2Recomped;
-  -- este mod nao roda no gen1recomp (que nao suporta Crystal e indexa por
-  -- ponteiro "banco:endereco").
+  -- Suporta tanto ponteiros "banco:endereco" (gen1recomp) quanto rotulos TEXT_S / nomeados
   local n = 0
   if idioma.falas == "pt" then
     n = n + each("dialogue", function(k, v)
       mod.content.text:override(k, v)
+      if k:sub(1, 6) == "TEXT_S" then
+        local bank, addr = k:sub(7):match("^(%w+)_(%w+)$")
+        if bank and addr then
+          mod.content.text:override(bank:lower() .. ":" .. addr:lower(), v)
+        end
+      elseif k:find("^%x%x:%x%x%x%x$") then
+        local bank, addr = k:match("^(%x%x):(%x%x%x%x)$")
+        if bank and addr then
+          mod.content.text:override("TEXT_S" .. bank:upper() .. "_" .. addr:upper(), v)
+        end
+      end
     end)
   end
   if idioma.menus == "pt" then

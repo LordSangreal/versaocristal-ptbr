@@ -11,7 +11,7 @@
       "id": "versaocristal",
       "title": "Versao Cristal",
       "author": "LordSangreal",
-      "version": "0.46.10",
+      "version": "0.46.11",
       "categories": [
         "LANGUAGE"
       ],
@@ -33,15 +33,15 @@
       ],
       "description_url": "data/mods/LordSangreal@versaocristal/description.md",
       "latest": {
-        "version": "0.46.10",
-        "tag": "v0.46.10",
-        "name": "Versao Cristal 0.46.10 -- traducao completa de pontos de referencia",
+        "version": "0.46.11",
+        "tag": "v0.46.11",
+        "name": "Versao Cristal 0.46.11 -- compatibilidade total de ponteiros e falas",
         "prerelease": false,
-        "published_at": "2026-08-24T18:08:00Z",
+        "published_at": "2026-08-24T18:25:00Z",
         "zip": {
-          "name": "versaocristal-0.46.10.zip",
-          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.10/versaocristal-0.46.10.zip",
-          "size": 322653
+          "name": "versaocristal-0.46.11.zip",
+          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.11/versaocristal-0.46.11.zip",
+          "size": 448024
         }
       },
       "update_check": "ok"

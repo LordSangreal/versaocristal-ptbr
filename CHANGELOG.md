@@ -2,6 +2,14 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.11
+
+**Compatibilidade total de ponteiros e expansão de diálogos no motor.**
+
+- Mapeamento e registro direto de todos os ponteiros de diálogo (`banco:endereco`) e rótulos (`TEXT_S...`), garantindo que as falas e interações sejam aplicadas com perfeição no motor gen1recomp e no Gen2Recomped.
+- Importadas 723 falas de campo e interações idênticas ao Gold (uso de STRENGTH, ROCK SMASH, pôsteres e decorações de quarto, falas de NPCs).
+- Sincronizadas 1.095 chaves de motor em `strings.lua`.
+
 ## 0.46.10
 
 **Pontos de referencia do Mapa e Banners.**
