@@ -4,6 +4,55 @@
 -- nao ha lang/move_names.lua nem lang/species_names.lua neste mod.
 
 return function(mod)
+  local idioma = {
+    falas = "pt",
+    menus = "pt",
+    golpes = "pt",
+    itens = "pt",
+  }
+  local temOpcoes = pcall(function()
+    mod.options:define({
+      {
+        key = "falas",
+        type = "choice",
+        label = "FALAS",
+        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
+        default = "pt",
+        requires_restart = true,
+      },
+      {
+        key = "menus",
+        type = "choice",
+        label = "MENUS E BATALHA",
+        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
+        default = "pt",
+        requires_restart = true,
+      },
+      {
+        key = "golpes",
+        type = "choice",
+        label = "DESCRICOES DE GOLPES",
+        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
+        default = "pt",
+        requires_restart = true,
+      },
+      {
+        key = "itens",
+        type = "choice",
+        label = "DESCRICOES DE ITENS",
+        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
+        default = "pt",
+        requires_restart = true,
+      },
+    })
+  end)
+  if temOpcoes then
+    for key in pairs(idioma) do
+      local ok, value = pcall(function() return mod.options:get(key) end)
+      if ok and value == "en" then idioma[key] = "en" end
+    end
+  end
+
   local function catalog(name)
     local rel = "lang/" .. name .. ".lua"
     local body = mod:read(rel)
@@ -55,12 +104,16 @@ return function(mod)
   -- este mod nao roda no gen1recomp (que nao suporta Crystal e indexa por
   -- ponteiro "banco:endereco").
   local n = 0
-  n = n + each("dialogue", function(k, v)
-    mod.content.text:override(k, v)
-  end)
-  n = n + each("strings", function(src, value)
-    mod.content.strings:override(src, value)
-  end)
+  if idioma.falas == "pt" then
+    n = n + each("dialogue", function(k, v)
+      mod.content.text:override(k, v)
+    end)
+  end
+  if idioma.menus == "pt" then
+    n = n + each("strings", function(src, value)
+      mod.content.strings:override(src, value)
+    end)
+  end
   n = n + each("item_names", function(id, value)
     mod.content.items:patch(id, { name = value })
   end)
@@ -75,12 +128,14 @@ return function(mod)
   -- O pcall isola: se a rota nao existir, o mod segue funcionando e o aviso
   -- aparece no log em vez de derrubar tudo.
   local descOk, descErro = 0, nil
-  each("item_descriptions", function(id, value)
-    local ok, err = pcall(function()
-      mod.content.items:patch(id, { description = value })
+  if idioma.itens == "pt" then
+    each("item_descriptions", function(id, value)
+      local ok, err = pcall(function()
+        mod.content.items:patch(id, { description = value })
+      end)
+      if ok then descOk = descOk + 1 elseif not descErro then descErro = err end
     end)
-    if ok then descOk = descOk + 1 elseif not descErro then descErro = err end
-  end)
+  end
   n = n + descOk
   if descErro then
     mod.log:warn("descricao de item nao aplicada: %s", tostring(descErro))
@@ -88,12 +143,14 @@ return function(mod)
   -- Descricao de golpe.  Aparece na tela de resumo do POKéMON e na bolsa
   -- quando o item e uma TM ou HM -- ali o jogo mostra a descricao do GOLPE.
   local mvOk, mvErro = 0, nil
-  each("move_descriptions", function(id, value)
-    local ok, err = pcall(function()
-      mod.content.moves:patch(id, { description = value })
+  if idioma.golpes == "pt" then
+    each("move_descriptions", function(id, value)
+      local ok, err = pcall(function()
+        mod.content.moves:patch(id, { description = value })
+      end)
+      if ok then mvOk = mvOk + 1 elseif not mvErro then mvErro = err end
     end)
-    if ok then mvOk = mvOk + 1 elseif not mvErro then mvErro = err end
-  end)
+  end
   n = n + mvOk
   if mvErro then
     mod.log:warn("descricao de golpe nao aplicada: %s", tostring(mvErro))

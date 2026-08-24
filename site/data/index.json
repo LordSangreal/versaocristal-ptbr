@@ -11,7 +11,7 @@
       "id": "versaocristal",
       "title": "Versao Cristal",
       "author": "LordSangreal",
-      "version": "0.46.6",
+      "version": "0.46.7",
       "categories": [
         "LANGUAGE"
       ],
@@ -33,14 +33,14 @@
       ],
       "description_url": "data/mods/LordSangreal@versaocristal/description.md",
       "latest": {
-        "version": "0.46.6",
-        "tag": "v0.46.6",
-        "name": "Versao Cristal 0.46.6 -- catalogo do motor sincronizado",
+        "version": "0.46.7",
+        "tag": "v0.46.7",
+        "name": "Versao Cristal 0.46.7 -- opcoes de idioma",
         "prerelease": false,
         "published_at": "2026-08-15T21:46:21Z",
         "zip": {
-          "name": "versaocristal-0.46.6.zip",
-          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.6/versaocristal-0.46.6.zip",
+          "name": "versaocristal-0.46.7.zip",
+          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.7/versaocristal-0.46.7.zip",
           "size": 310772
         }
       },

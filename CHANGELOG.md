@@ -2,6 +2,15 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.7
+
+**Adicionadas opcoes de idioma no menu de mods.**
+
+- `FALAS`: alterna as falas do jogo entre portugues e ingles.
+- `MENUS E BATALHA`: alterna os textos escritos pelo motor.
+- `DESCRICOES DE GOLPES` e `DESCRICOES DE ITENS`: alternam apenas as descricoes.
+- Todas as escolhas valem no proximo boot; o padrao continua sendo portugues.
+
 ## 0.46.6
 
 **Sincronizado o catalogo do motor com a traducao Gold.**

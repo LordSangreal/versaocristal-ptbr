@@ -31,6 +31,10 @@ Pokemon Crystal para o aplicativo importar.
 do motor, grito de especie e afins), medida com a mesma logica de resolucao
 que o motor usa (`Data:resolveText`).
 
+O menu de detalhes do mod oferece escolhas independentes para deixar falas,
+menus/batalha e descricoes de golpes/itens em ingles. As escolhas valem no
+proximo boot e portugues e o padrao.
+
 ### As falas sao as do Crystal
 
 O mod nasceu do catalogo do Gold, e ate a 0.46.2 centenas de falas
