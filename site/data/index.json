@@ -11,7 +11,7 @@
       "id": "versaocristal",
       "title": "Versao Cristal",
       "author": "LordSangreal",
-      "version": "0.46.4",
+      "version": "0.46.5",
       "categories": [
         "LANGUAGE"
       ],
@@ -33,14 +33,14 @@
       ],
       "description_url": "data/mods/LordSangreal@versaocristal/description.md",
       "latest": {
-        "version": "0.46.4",
-        "tag": "v0.46.4",
-        "name": "Versao Cristal 0.46.4 -- selecao de genero traduzida",
+        "version": "0.46.5",
+        "tag": "v0.46.5",
+        "name": "Versao Cristal 0.46.5 -- relogio traduzido",
         "prerelease": false,
         "published_at": "2026-08-15T21:46:21Z",
         "zip": {
-          "name": "versaocristal-0.46.4.zip",
-          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.4/versaocristal-0.46.4.zip",
+          "name": "versaocristal-0.46.5.zip",
+          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.5/versaocristal-0.46.5.zip",
           "size": 310772
         }
       },

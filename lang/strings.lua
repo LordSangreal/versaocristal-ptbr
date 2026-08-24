@@ -541,6 +541,7 @@ return {
 -- ROM e configuracoes graficas do recomp ficam de fora, nao fazem
 -- parte do Pokemon Gold/Crystal em si.
   ["A COIN CASE is\nrequired!"] = "É necessário um\nCOIN CASE!",
+  ["%s o'clock"] = "%s horas",
   ["A to Z"] = "A a Z",
   ["Accessed PROF.\nOAK's PC.\fAccessed POKéDEX\nRating System."] = "Acessou o PC do\nPROF.OAK.\fAcessou o sistema\nde avaliação do\vPOKéDEX.",
   ["All STATUS changes\nare eliminated!"] = "Todas as mudanças\nde STATUS somem!",
@@ -570,6 +571,9 @@ return {
   ["GIVE"] = "DAR",
   ["HALL OF FAME"] = "SALÃO DA FAMA",
   ["Happiness"] = "Felicidade",
+  ["DAY"] = "DIA",
+  ["MORN"] = "MANHÃ",
+  ["NITE"] = "NOITE",
   ["Happiness (day)"] = "Felicidade (dia)",
   ["Happiness (night)"] = "Felicidade (noite)",
   ["Hey! There's a\nswitch under the\ntrash!\fThe 1st electric\nlock opened!"] = "Ei! Tem um\ninterruptor\vembaixo do\vlixo!\fA 1ª trava\nelétrica abriu!",

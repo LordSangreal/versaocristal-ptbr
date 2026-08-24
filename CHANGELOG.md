@@ -2,6 +2,14 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.5
+
+**Traduzido o relogio da configuracao inicial.**
+
+- `MORN`, `DAY` e `NITE` agora aparecem como `MANHA`, `DIA` e `NOITE`.
+- `o'clock` agora aparece como `horas`, seguindo o formato brasileiro.
+- A caixa da selecao `MENINO`/`MENINA` permanece ampliada no motor `0.2.111`.
+
 ## 0.46.4
 
 **Traduzida a selecao de genero na abertura do Crystal.**
