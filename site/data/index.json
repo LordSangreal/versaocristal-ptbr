@@ -11,7 +11,7 @@
       "id": "versaocristal",
       "title": "Versao Cristal",
       "author": "LordSangreal",
-      "version": "0.46.7",
+      "version": "0.46.8",
       "categories": [
         "LANGUAGE"
       ],
@@ -33,14 +33,14 @@
       ],
       "description_url": "data/mods/LordSangreal@versaocristal/description.md",
       "latest": {
-        "version": "0.46.7",
-        "tag": "v0.46.7",
-        "name": "Versao Cristal 0.46.7 -- opcoes de idioma",
+        "version": "0.46.8",
+        "tag": "v0.46.8",
+        "name": "Versao Cristal 0.46.8 -- radio traduzido",
         "prerelease": false,
         "published_at": "2026-08-15T21:46:21Z",
         "zip": {
-          "name": "versaocristal-0.46.7.zip",
-          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.7/versaocristal-0.46.7.zip",
+          "name": "versaocristal-0.46.8.zip",
+          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.8/versaocristal-0.46.8.zip",
           "size": 310772
         }
       },

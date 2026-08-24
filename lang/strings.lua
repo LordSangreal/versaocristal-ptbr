@@ -1012,6 +1012,8 @@ return {
   ["THURSDAY"] = "QUINTA",
   ["TILT"] = "INCLINAÇÃO",
   ["TIME"] = "TEMPO",
+  ["TALK! Please tune in next time!"] = "TALK! Sintonize na\npróxima vez!",
+  ["TALK! Please tune in\nnext time!"] = "TALK! Sintonize na\npróxima vez!",
   ["TM POCKET"] = "BOLSO DE TM",
   ["TO"] = "ATÉ",
   ["TOUCH LAYOUT"] = "LAYOUT TOQUE",

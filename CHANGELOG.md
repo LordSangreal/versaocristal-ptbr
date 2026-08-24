@@ -2,6 +2,14 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.8
+
+**Traduzida a mensagem final do programa POKéMON TALK.**
+
+- `TALK! Please tune in next time!` agora aparece como `TALK! Sintonize na próxima vez!`.
+- O motor passa as linhas do radio pelo catalogo, inclusive quando a frase vem do cache da ROM.
+- A mesma traducao funciona com e sem quebra de linha na fonte.
+
 ## 0.46.7
 
 **Adicionadas opcoes de idioma no menu de mods.**
