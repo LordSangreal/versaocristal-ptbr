@@ -2,6 +2,12 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.9
+
+**Padronizacao da Ilha de Cinnabar.**
+
+- A placa de boas-vindas de Cinnabar (`CinnabarIslandSignText` e `TEXT_S6B_4CC2`) agora exibe `ILHA DE CINNABAR` (estava `CINNABAR ISLAND`).
+
 ## 0.46.8
 
 **Traduzida a mensagem final do programa POKéMON TALK.**
