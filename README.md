@@ -21,7 +21,7 @@ Pokemon Crystal para o aplicativo importar.
 
 | O que | Quanto |
 |---|---|
-| Falas do jogo | 7608 |
+| Falas do jogo | 7609 |
 | Rotulos de menu e batalha | 645 |
 | Descricoes de golpe | 251 |
 | Descricoes de item | 161 |

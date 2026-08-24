@@ -2,6 +2,14 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.46.4
+
+**Traduzida a selecao de genero na abertura do Crystal.**
+
+- Adicionada a fala `_AreYouABoyOrAreYouAGirlText`: "Você é menino? / Ou é menina?"
+- A tela usa as entradas `BOY` e `GIRL` do catalogo para mostrar `MENINO` e `MENINA`.
+- Requer o motor com a correcao da tela de genero, incluida no payload `0.2.109`.
+
 ## 0.46.3
 
 **As falas agora sao as do Crystal, nao as do Gold.**

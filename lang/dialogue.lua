@@ -9,6 +9,7 @@
 -- jogos com texto diferente -- um catalogo unico mostrava a fala do Gold
 -- dentro do Crystal.
 return {
+  ["_AreYouABoyOrAreYouAGirlText"] = "Você é menino?\nOu é menina?",
   ["AcademyBlackboardText"] = "O quadro fala\nsobre mudanças\fde status em\nbatalha.",
   ["AcademyBurnText"] = "Uma queimadura\nconsome PS.\fEla reduz\no ataque.\fQueimadura\nfica após a luta.\fUse um BURN HEAL\npra curar.",
   ["AcademyEarlIntroText"] = "EARL sou eu!\fMaravilhosos\nsão os POKéMON,\fsim!\nEnsinar você\veu vou!\fO que quer\nsaber? Vencedor\vser você quer?",

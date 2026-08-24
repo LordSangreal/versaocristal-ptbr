@@ -11,7 +11,7 @@
       "id": "versaocristal",
       "title": "Versao Cristal",
       "author": "LordSangreal",
-      "version": "0.46.3",
+      "version": "0.46.4",
       "categories": [
         "LANGUAGE"
       ],
@@ -33,14 +33,14 @@
       ],
       "description_url": "data/mods/LordSangreal@versaocristal/description.md",
       "latest": {
-        "version": "0.46.3",
-        "tag": "v0.46.3",
-        "name": "Versao Cristal 0.46.3 -- falas do Crystal",
+        "version": "0.46.4",
+        "tag": "v0.46.4",
+        "name": "Versao Cristal 0.46.4 -- selecao de genero traduzida",
         "prerelease": false,
         "published_at": "2026-08-15T21:46:21Z",
         "zip": {
-          "name": "versaocristal-0.46.3.zip",
-          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.3/versaocristal-0.46.3.zip",
+          "name": "versaocristal-0.46.4.zip",
+          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.46.4/versaocristal-0.46.4.zip",
           "size": 310772
         }
       },
