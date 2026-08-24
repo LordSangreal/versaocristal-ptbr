@@ -1,12 +1,10 @@
 # Versao Cristal
 
-**Pokemon Crystal em portugues brasileiro**, para o
-[Gen2Recomped](https://github.com/UNDERdecoded/Gen2Recomped) -- o fork de
-UNDERdecodedHD do `gen1recomp`, que e quem tem suporte a Crystal. Os dois
-sao recriacoes nativas dos jogos em Lua/LOVE2D, nao emuladores.
+**Pokemon Crystal em portugues brasileiro**, rodando no [gen1recomp](https://github.com/bryanthaboi/gen1recomp) e no [Gen2Recomped](https://github.com/UNDERdecoded/Gen2Recomped). Os dois sao recriacoes nativas dos jogos em Lua/LOVE2D, nao emuladores.
 
-Nao acompanha nenhum byte de ROM. Voce precisa da sua propria copia de
-Pokemon Crystal para o aplicativo importar.
+**Todos os testes de textos, menus, dialogos, placas e jogabilidade estao sendo realizados e validados ativamente de forma continua diretamente no `gen1recomp` (PC e Android).**
+
+Nao acompanha nenhum byte de ROM. Voce precisa da sua propria copia de Pokemon Crystal para o aplicativo importar.
 
 **Todo o texto e traducao propria, escrita a partir do ingles original.**
 
@@ -21,60 +19,32 @@ Pokemon Crystal para o aplicativo importar.
 
 | O que | Quanto |
 |---|---|
-| Falas do jogo | 7609 |
-| Rotulos de menu e batalha | 1090 |
+| Falas e dialogos no catalogo | 11.519 |
+| Rotulos de menu e batalha | 1095 |
+| Pontos de referencia no mapa (`landmarks.lua`) | 94 |
 | Descricoes de golpe | 251 |
 | Descricoes de item | 161 |
 | Glifos acentuados desenhados | 25 |
 
-**Cobertura: 99,1%** das falas com conteudo real (fora placeholder generico
-do motor, grito de especie e afins), medida com a mesma logica de resolucao
-que o motor usa (`Data:resolveText`).
-
-O menu de detalhes do mod oferece escolhas independentes para deixar falas,
-menus/batalha e descricoes de golpes/itens em ingles. As escolhas valem no
-proximo boot e portugues e o padrao.
-
-### As falas sao as do Crystal
-
-O mod nasceu do catalogo do Gold, e ate a 0.46.2 centenas de falas
-carregavam a versao do **Gold** daquele dialogo -- rotulos que existem nos
-dois jogos com texto diferente. A 0.46.3 reescreveu 152 falas a partir do
-ingles do Crystal, propagadas para 398 slots. O que sobra marcado sao 23
-placeholders genericos do motor e gritos de especie, sem fala real.
-
-O que ainda nao foi traduzido **aparece em ingles**, nunca em branco nem
-cortado: o mod so substitui o que tem traducao pronta, entao o jogo e
-sempre jogavel.
+O menu de detalhes do mod oferece escolhas independentes para deixar falas, menus/batalha e descricoes de golpes/itens em ingles. As escolhas valem no proximo boot e portugues e o padrao.
 
 ---
 
 ## Por que dois repositorios
 
-Ate a `versaodourada` 0.45.1, Gold e Crystal dividiam um catalogo so. Fazia
-sentido no comeco: os dois jogos rodam no mesmo motor, e o Gen2Recomped
-indexa dialogo por **rotulo nomeado** (`MomGivesPokegearText`), nao por
-endereco de ROM -- entao a mesma chave servia os dois.
+Ate a `versaodourada` 0.45.1, Gold e Crystal dividiam um catalogo so. Fazia sentido no comeco: os dois jogos rodam no mesmo motor, e o Gen2Recomped indexa dialogo por **rotulo nomeado** (`MomGivesPokegearText`), nao por endereco de ROM -- entao a mesma chave servia os dois.
 
-O problema aparece no detalhe. **582 rotulos existem nos dois jogos com
-texto em ingles diferente** -- o Crystal reescreveu falas inteiras, e o
-extrator reaproveita o mesmo nome de rotulo. Com um catalogo unico, quem
-jogasse Crystal via a fala do Gold traduzida, e vice-versa. Nao ha como
-resolver isso dentro de um arquivo so: a chave e a mesma, o texto e que
-muda.
+O problema aparece no detalhe. **Centenas de rotulos existem nos dois jogos com texto em ingles diferente** -- o Crystal reescreveu falas inteiras, e o extrator reaproveita o mesmo nome de rotulo. Com um catalogo unico, quem jogasse Crystal via a fala do Gold traduzida, e vice-versa.
 
 Dai a separacao:
 
 | | `versaodourada` | `versaocristal-ptbr` (aqui) |
 |---|---|---|
-| Jogo | Gold | Crystal |
-| Motores | `gen1recomp` e Gen2Recomped | Gen2Recomped |
-| Catalogos | `dialogue.lua` (ponteiro de ROM, pro `gen1recomp`) + `dialogue_gen2recomped.lua` (rotulo nomeado) | `dialogue.lua` (rotulo nomeado) |
+| Jogo | Gold / Silver | Crystal |
+| Motores | `gen1recomp` e Gen2Recomped | `gen1recomp` e Gen2Recomped |
+| Catalogos | `dialogue.lua` (ponteiro de ROM, pro `gen1recomp`) + `dialogue_gen2recomped.lua` (rotulo nomeado) | `dialogue.lua` (ponteiros de ROM e rotulos nomeados com registro duplo) |
 
-Os catalogos que **nao** dependem de como cada jogo numera as falas --
-`strings.lua` (menus e batalha, indexado pelo texto-fonte em ingles) e as
-descricoes de golpe/item (indexadas por ID interno, tipo `POTION`) -- sao
-identicos nos dois repositorios.
+Os catalogos que **nao** dependem de como cada jogo numera as falas -- `strings.lua` (menus e batalha, 1.095 chaves sincronizadas), `landmarks.lua` (94 pontos de mapa) e as descricoes de golpe/item -- sao mantidos em sincronia em ambos os repositorios.
 
 ---
 
