@@ -1,8 +1,14 @@
 # Changelog
 
-Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
+## 0.52.0 (2026-08-27)
+- Tradução do menu do Pokégear (MÃE, PROF. ELM, BICICLETARIA, chamadas e prompts).
+- Tradução de mensagens de batalha (ganho de EXP, subida de nível, aprendizado de golpes e recuperação).
+- Expansão do menu 2x2 de batalha (LUTAR, MOCHILA, POKéMON, FUGIR) com espaçamento limpo e sem abreviações desnecessárias.
+- Ajuste das margens do menu Salvar para evitar sobreposição da caixa SIM/NÃO com TEMPO.
 
 ## 0.51.0
+
+Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
 **Correção de codificação de caracteres (UTF-8 puro), mensagens de desmaio em batalha e layout de menus.**
 
