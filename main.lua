@@ -1,17 +1,55 @@
 -- VersaoCristal: Pokemon Crystal em portugues brasileiro.
 --
--- Nomes de golpes e de Pokemon ficam no original em ingles, de proposito:
--- nao ha lang/move_names.lua nem lang/species_names.lua neste mod.
+-- Nome de POKeMON, de personagem e de cidade ficam no original em ingles, de
+-- proposito -- so a palavra generica de lugar traduz ("CIDADE DE VIOLET").
+-- Golpe, item, tipo e classe de treinador SE traduzem desde a 0.48.0, com a
+-- terminologia das cartas de TCG pt-BR; por isso existem lang/move_names.lua
+-- e lang/item_names.lua. Nao ha lang/species_names.lua e nao deve haver.
 
 return function(mod)
+  -- ---- idioma de GOLPE, ITEM, NPCS e POKEDEX ------------------------------
   local idioma = {
     falas = "pt",
     menus = "pt",
     golpes = "pt",
     itens = "pt",
+    npcs = "pt",
+    pokedex = "pt",
   }
   local temOpcoes = pcall(function()
     mod.options:define({
+      {
+        key = "golpes",
+        type = "choice",
+        label = "NOME DOS GOLPES",
+        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
+        default = "pt",
+        requires_restart = true,
+      },
+      {
+        key = "itens",
+        type = "choice",
+        label = "NOME DOS ITENS",
+        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
+        default = "pt",
+        requires_restart = true,
+      },
+      {
+        key = "npcs",
+        type = "choice",
+        label = "NOME DOS NPCS",
+        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
+        default = "pt",
+        requires_restart = true,
+      },
+      {
+        key = "pokedex",
+        type = "choice",
+        label = "POKEDEX",
+        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
+        default = "pt",
+        requires_restart = true,
+      },
       {
         key = "falas",
         type = "choice",
@@ -28,28 +66,12 @@ return function(mod)
         default = "pt",
         requires_restart = true,
       },
-      {
-        key = "golpes",
-        type = "choice",
-        label = "DESC. GOLPES",
-        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
-        default = "pt",
-        requires_restart = true,
-      },
-      {
-        key = "itens",
-        type = "choice",
-        label = "DESC. ITENS",
-        choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
-        default = "pt",
-        requires_restart = true,
-      },
     })
   end)
   if temOpcoes then
-    for key in pairs(idioma) do
-      local ok, value = pcall(function() return mod.options:get(key) end)
-      if ok and value == "en" then idioma[key] = "en" end
+    for chave in pairs(idioma) do
+      local ok, valor = pcall(function() return mod.options:get(chave) end)
+      if ok and valor == "en" then idioma[chave] = "en" end
     end
   end
 
@@ -83,10 +105,6 @@ return function(mod)
   end
 
   -- ---- glifos -------------------------------------------------------
-  -- Registrar ANTES de qualquer coisa pedir um glifo.  O caminho da imagem
-  -- vai direto para love.graphics.newImage, que resolve contra a raiz do
-  -- jogo e nao contra o mod -- sem `mod.assets:path` a pagina carrega vazia
-  -- e todo acentuado desenha em branco.
   for id, page in pairs(catalog("font")) do
     if type(page) == "table" and type(page.image) == "string"
         and mod:read(page.image) then
@@ -99,7 +117,6 @@ return function(mod)
   end
 
   -- ---- aplicacao -----------------------------------------------------
-  -- Suporta tanto ponteiros "banco:endereco" (gen1recomp) quanto rotulos TEXT_S / nomeados
   local n = 0
   if idioma.falas == "pt" then
     n = n + each("dialogue", function(k, v)
@@ -117,57 +134,77 @@ return function(mod)
       end
     end)
   end
+
   if idioma.menus == "pt" then
     n = n + each("strings", function(src, value)
       mod.content.strings:override(src, value)
     end)
   end
-  n = n + each("item_names", function(id, value)
-    mod.content.items:patch(id, { name = value })
-  end)
+
+  if idioma.itens == "pt" then
+    n = n + each("item_names", function(id, value)
+      mod.content.items:patch(id, { name = value })
+    end)
+    each("item_descriptions", function(id, value)
+      pcall(function() mod.content.items:patch(id, { description = value }) end)
+    end)
+  end
+
+  if idioma.golpes == "pt" then
+    each("move_names", function(id, value)
+      pcall(function() mod.content.moves:patch(id, { name = value }) end)
+    end)
+    each("move_descriptions", function(id, value)
+      pcall(function() mod.content.moves:patch(id, { description = value }) end)
+    end)
+  end
+
   n = n + each("landmarks", function(id, value)
     mod.content.landmarks:patch(id, { name = value })
   end)
-  -- O status tem dois rotulos: o do texto e o de tres letras que cabe na
-  -- caixinha ao lado da barra de vida.  Trocar so o primeiro deixaria o HUD
-  -- em ingles, que e justamente onde o rotulo mais aparece.
-  n = n + each("status_labels", function(id, value)
-    mod.content.statuses:patch(id, { label = value, hudLabel = value })
+
+  if idioma.npcs == "pt" then
+    each("trainer_classes", function(id, value)
+      pcall(function() mod.content.trainers:patch(id, { name = value }) end)
+    end)
+  end
+
+  each("status_labels", function(id, value)
+    pcall(function() mod.content.statuses:patch(id, { label = value, hudLabel = value }) end)
   end)
-  -- Descricao de item.  `description` nao esta declarado no schema, mas o
-  -- registro de topo e extensivel e quem desenha le `def.description`.
-  -- O pcall isola: se a rota nao existir, o mod segue funcionando e o aviso
-  -- aparece no log em vez de derrubar tudo.
-  local descOk, descErro = 0, nil
-  if idioma.itens == "pt" then
-    each("item_descriptions", function(id, value)
-      local ok, err = pcall(function()
-        mod.content.items:patch(id, { description = value })
-      end)
-      if ok then descOk = descOk + 1 elseif not descErro then descErro = err end
-    end)
-  end
-  n = n + descOk
-  if descErro then
-    mod.log:warn("descricao de item nao aplicada: %s", tostring(descErro))
-  end
-  -- Descricao de golpe.  Aparece na tela de resumo do POKéMON e na bolsa
-  -- quando o item e uma TM ou HM -- ali o jogo mostra a descricao do GOLPE.
-  local mvOk, mvErro = 0, nil
-  if idioma.golpes == "pt" then
-    each("move_descriptions", function(id, value)
-      local ok, err = pcall(function()
-        mod.content.moves:patch(id, { description = value })
-      end)
-      if ok then mvOk = mvOk + 1 elseif not mvErro then mvErro = err end
-    end)
-  end
-  n = n + mvOk
-  if mvErro then
-    mod.log:warn("descricao de golpe nao aplicada: %s", tostring(mvErro))
+
+  each("type_names", function(id, value)
+    pcall(function() mod.content.type_chart:patch(id, { name = value }) end)
+  end)
+
+  -- POKéDEX
+  if idioma.pokedex == "pt" then
+    local dex = catalog("pokedex")
+    if mod.content.pokedex then
+      for id, entrada in pairs(dex) do
+        if type(entrada) == "table" then
+          pcall(function() mod.content.pokedex:patch(id, entrada) end)
+        end
+      end
+    end
+    if mod.content.pokemon then
+      for id, entrada in pairs(dex) do
+        if type(entrada) == "table" and entrada.height and entrada.weight then
+          pcall(function()
+            mod.content.pokemon:patch(id, {
+              dexEntry = {
+                heightFt = math.floor(entrada.height / 100),
+                heightIn = entrada.height % 100,
+                weight = entrada.weight,
+              },
+            })
+          end)
+        end
+      end
+    end
   end
 
   mod.events:on("game.ready", function()
-    mod.log:info("VersaoCristal: %d textos aplicados", n)
+    mod.log:info("VersaoCristal: mod pronto e carregado")
   end)
 end
