@@ -31,7 +31,7 @@ return function(mod)
       {
         key = "golpes",
         type = "choice",
-        label = "DESCRICOES DE GOLPES",
+        label = "DESC. GOLPES",
         choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
         default = "pt",
         requires_restart = true,
@@ -39,7 +39,7 @@ return function(mod)
       {
         key = "itens",
         type = "choice",
-        label = "DESCRICOES DE ITENS",
+        label = "DESC. ITENS",
         choices = { { "PORTUGUES", "pt" }, { "ENGLISH", "en" } },
         default = "pt",
         requires_restart = true,
