@@ -2,6 +2,16 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.48.0
+
+**Tradução completa de telefonemas (Mãe, Prof. Carvalho, Elm, Treinadores, Buena) e abreviação de menus.**
+
+- Traduzidos todos os diálogos de economia, banco, compras e telefonemas da Mãe (`MomPhoneGreetingText`, `_MomLeavingText1..3`, etc.).
+- Traduzidas as falas de introdução de relógio, avaliação da Pokédex pelo PC (`_OakRating01..19`) e avisos do Prof. Carvalho.
+- Traduzidos os telefonemas e programas da Rádio Buena e rádio Rocket.
+- Abreviadas as opções do mod (`DESC. GOLPES` e `DESC. ITENS`) para não cortar na tela do Game Boy.
+- Injetados todos os ponteiros de memória e símbolos duplos para 100% de compatibilidade.
+
 ## 0.47.1
 
 **Diálogos da introdução do PROF. ELM no Crystal.**
