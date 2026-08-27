@@ -2,6 +2,17 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.49.0
+
+**Pokédex completa de 251 espécies em pt-BR, opções de idioma completas, catálogos de golpes/itens/treinadores e traduções de batalha.**
+
+- **Pokédex Completa do Crystal**: Traduzidas todas as 251 espécies com textos oficiais exclusivos da versão Crystal formatados em até 18 colunas por linha (com quebras `<NEXT>`), categorias de espécie oficiais em português (`RATO DE FOGO`, `EXPLORADOR`, `SEMENTE`, etc.) e conversões métricas de altura e peso (`AL 1,8m`, `PS 17,0kg`).
+- **Catálogos Completos de Termos**: Adicionados catálogos completos de nomes de golpes em TCG pt-BR (`move_names.lua`), itens (`item_names.lua`), classes de treinadores (`trainer_classes.lua`), tipos elementais (`type_names.lua`) e rótulos de status (`status_labels.lua`).
+- **Opções do Mod no Menu**: Adicionados interruptores no menu do mod para permitir que o jogador escolha individualmente entre Português e Inglês para: Nomes de Golpes, Nomes de Itens, Nomes de NPCs, Pokédex, Falas e Menus/Batalha.
+- **Traduções do Sistema de Combate**: Traduzidas todas as mensagens de batalha (início de batalha de treinador, envio de Pokémon, acerto crítico, desmaio, ganho de EXP, subida de nível, falhas/desvios de golpes e vitória/derrota).
+- **Tradução do Pokégear (Telefone)**: Traduzidas as perguntas de ligação, opções `LIGAR` / `CANCELAR` / `APAGAR` e nomes de contatos (`MÃE:`, `PROF. ELM:`).
+- **Mensagens de Captura**: Traduzidas as perguntas de apelido e a mensagem de registro na Pokédex.
+
 ## 0.48.0
 
 **Tradução completa de telefonemas (Mãe, Prof. Carvalho, Elm, Treinadores, Buena) e abreviação de menus.**
