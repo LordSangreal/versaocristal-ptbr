@@ -2,6 +2,12 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.50.0
+
+**Atualização geral com Pokédex 251 completa, catálogos e sincronização com motor 0.2.133.**
+
+- Sincronização completa com novo motor e novos diálogos.
+
 ## 0.49.0
 
 **Pokédex completa de 251 espécies em pt-BR, opções de idioma completas, catálogos de golpes/itens/treinadores e traduções de batalha.**
