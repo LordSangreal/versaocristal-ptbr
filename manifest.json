@@ -1,7 +1,7 @@
 {
   "id": "versaocristal",
   "name": "Versao Cristal",
-  "version": "0.50.0",
+  "version": "0.51.0",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",

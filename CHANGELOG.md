@@ -2,6 +2,14 @@
 
 Este arquivo e escrito a mao e o build so o copia para dentro do pacote.
 
+## 0.51.0
+
+**Correção de codificação de caracteres (UTF-8 puro), mensagens de desmaio em batalha e layout de menus.**
+
+- Restaurado catálogo `strings.lua` em UTF-8 limpo corrigindo todos os caracteres acentuados corrompidos em menus e opções.
+- Corrigida a tradução de desmaio de Pokémon selvagem/inimigo (`SENTRET selvagem desmaiou!`).
+- Ajustado layout da caixa de opções de batalha 2x2 e alinhamento do menu de salvamento.
+
 ## 0.50.0
 
 **Atualização geral com Pokédex 251 completa, catálogos e sincronização com motor 0.2.133.**
