@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.54.0 (2026-08-28)
+- Tradução das mensagens de falha ao lançar Pokébora (`Ah não! O POKéMON se libertou!`, `Nossa! Parecia que tinha sido pego!`, `Aargh! Quase que pegou!`, `Puxa! Foi tão por pouco!`).
+- Tradução de fuga de batalha selvagem (`%s selvagem fugiu!`, `%s fugiu com medo!`, `%s foi arremessado!`, `%s fugiu da batalha!`).
+
 ## 0.53.0 (2026-08-28)
 - Tradução da sequência de captura (`Pegou! %s foi capturado!`) e novo registro de Pokédex (`%s foi adicionado à #DEX.`).
 - Tradução de mensagens de efetividade de golpes (`É superefetivo!`, `Não é muito efetivo…`) e ataques que erraram (`%s errou o ataque!`).
