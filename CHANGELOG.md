@@ -1,4 +1,13 @@
-# Changelog
+# Changelog - Versão Cristal PT-BR
+
+## [0.55.0] - 2026-08-28
+### Corrigido
+- Glifo `Í` (maiúsculo com acento agudo) aprimorado em `assets/font/latin.png` para visualização limpa e correta de `LÍDER`.
+- Mensagem de desafio de treinador ajustada para quebrar linha (`"%s\nquer batalhar!"`), garantindo exibição de "quer batalhar!" sem cortes.
+- Mensagem de envio de Pokémon por treinador ajustada para quebrar linha (`"%s\nenviou %s!"`), evitando overflow e corte do nome do mon.
+- Mensagens de condições de status (queimadura, envenenamento, paralisia, congelamento) totalmente traduzidas.
+- Mensagens de confusão (`"%s ficou confuso!"`, etc.) e dreno de energia (`"A energia de %s foi drenada!"`) traduzidas.
+- Diálogos de pescadores da Rota 32 (Ralph, Henry, Justin) devidamente mapeados para ponteiros do Crystal em `dialogue.lua`.
 
 ## 0.54.0 (2026-08-28)
 - Tradução das mensagens de falha ao lançar Pokébora (`Ah não! O POKéMON se libertou!`, `Nossa! Parecia que tinha sido pego!`, `Aargh! Quase que pegou!`, `Puxa! Foi tão por pouco!`).

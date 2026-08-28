@@ -1,13 +1,3 @@
--- Falas do Pokemon Crystal em portugues brasileiro.
---
--- Chave = rotulo nomeado da desmontagem (MomGivesPokegearText) ou, quando o
--- extrator nao resolve rotulo, TEXT_S<banco>_<endereco> -- o formato que o
--- Gen2Recomped usa em data/generated/text.lua.
---
--- Este catalogo e SO do Crystal.  A versao do Gold vive noutro repositorio
--- (LordSangreal/versaodourada) porque centenas de rotulos existem nos dois
--- jogos com texto diferente -- um catalogo unico mostrava a fala do Gold
--- dentro do Crystal.
 return {
   ["03:4d41"] = "{STRBUF} usou\nSTRENGTH!",
   ["03:4d46"] = "{STRBUF} move\npedregulhos.",
@@ -942,6 +932,7 @@ return {
   ["1d:5b04"] = "Vou pra KANTO\nfazer shows de\vcuspir fogo!",
   ["1d:5b38"] = "Fsss… A chama\nestá fraquinha…",
   ["1d:5b52"] = "Acho que fogo é\nfraco no mar.\fNão faz diferença?\nSério?",
+  ["1d:5b8e"] = "Vou visitar minha\nvovó para pegar\vuns insetos!",
   ["1d:5bd5"] = "Dá para achar um\nmonte de POKéMON\vnas árvores!",
   ["1d:5c07"] = "Estou tentando\nesquecer as mágoas\vVamos batalhar!",
   ["1d:5c32"] = "Meu peito chora…",
@@ -1892,14 +1883,17 @@ return {
   ["64:4925"] = "Você tem bons\nPOKéMON aí.\fDeve ser do treino\nque você deu\fneles por\nCIDADE DE VIOLET.\fO treino no\nGINÁSIO deve ter\fajudado bastante.\nSem dúvida.\fComo lembrança de\nCIDADE DE VIOLET,\vleve isto.\fAumenta a força\ndos ataques de\vplanta.",
   ["64:4a15"] = "O que viveu em\nCIDADE DE VIOLET\fdeve ser útil na\nsua jornada.",
   ["64:4a59"] = "Que tal levar\nesta gostosa e\fnutritiva\nSLOWPOKETAIL?\fPara você agora,\nsó ¥1.000.000!\fVai querer!",
-  ["64:4acf"] = "Tsc! Pensei que\na molecada de hoje\vtinha dinheiro…",
+  ["64:4acf"] = "Tch! Achei que as\ncrianças de hoje em\vdia fossem ricas…",
   ["64:4afc"] = "Não quer? Então\nfora daqui. Xô!",
   ["64:4b21"] = "Uau!\fVocê me fez perder\naquele peixe!",
   ["64:4b44"] = "Splash!",
-  ["64:4b4e"] = "Calmo, concentrado\nA essência da\fpesca e dos\nPOKéMON é a\vmesma.",
+  ["64:4b4e"] = "Calmo, sereno…\nA essência de pescar\ve de POKéMON é\va mesma.",
+  ["64:4b8f"] = "Eu sou muito bom\nem pescar e em\vPOKéMON.\fNão vou perder\npra criança\vnenhuma!",
   ["64:4bda"] = "Tch! Quis apressar\nas coisas…",
   ["64:4bf8"] = "Pescar é paixão\nde uma vida.\fPOKéMON são amigos\nde uma vida!",
+  ["64:4c37"] = "Um, dois, três…\nMuahahaha, que bela\vpescaria!\fTerminei! Vá em\nfrente e pegue o\vquanto puder!",
   ["64:4dcf"] = "Meus POKéMON?\nRecém-pescados!",
+  ["64:4de9"] = "SPLASH?",
   ["64:4df2"] = "POKéMON\nrecém-pegos não\vsão\fpáreo para os bem\ncriados.",
   ["64:4e2e"] = "Nunca vi você\npor aqui antes.\fEntão você se acha\nbem durão?",
   ["64:4e73"] = "Você é forte!",
@@ -2809,6 +2803,7 @@ return {
   ["6a:664b"] = "Nos dias de sol,\nacho que\fas crianças\nprefeririam\vbrincar no pátio\fa estudar na sala\nde aula.",
   ["6a:66b3"] = "Eu não queria\nperder…",
   ["6a:66ca"] = "Estudar é\nimportante, mas se\vexercitar também.",
+  ["6a:6703"] = "Espera. Preciso\nligar pra mamãe",
   ["6a:6725"] = "Desculpe, mãe!\nEu apanhei!",
   ["6a:6740"] = "Minha mãe se\npreocupa demais\feu tenho que ligar\ntoda hora.",
   ["6a:6784"] = "Vamos batalhar.\nNão vou perder!",
@@ -8988,6 +8983,7 @@ return {
   ["TEXT_S1D_5B04"] = "Vou pra KANTO\nfazer shows de\vcuspir fogo!",
   ["TEXT_S1D_5B38"] = "Fsss… A chama\nestá fraquinha…",
   ["TEXT_S1D_5B52"] = "Acho que fogo é\nfraco no mar.\fNão faz diferença?\nSério?",
+  ["TEXT_S1D_5B8E"] = "Vou visitar minha\nvovó para pegar\vuns insetos!",
   ["TEXT_S1D_5BD5"] = "Dá para achar um\nmonte de POKéMON\vnas árvores!",
   ["TEXT_S1D_5C07"] = "Estou tentando\nesquecer as mágoas\vVamos batalhar!",
   ["TEXT_S1D_5C32"] = "Meu peito chora…",
@@ -9938,14 +9934,17 @@ return {
   ["TEXT_S64_4925"] = "Você tem bons\nPOKéMON aí.\fDeve ser do treino\nque você deu\fneles por\nCIDADE DE VIOLET.\fO treino no\nGINÁSIO deve ter\fajudado bastante.\nSem dúvida.\fComo lembrança de\nCIDADE DE VIOLET,\vleve isto.\fAumenta a força\ndos ataques de\vplanta.",
   ["TEXT_S64_4A15"] = "O que viveu em\nCIDADE DE VIOLET\fdeve ser útil na\nsua jornada.",
   ["TEXT_S64_4A59"] = "Que tal levar\nesta gostosa e\fnutritiva\nSLOWPOKETAIL?\fPara você agora,\nsó ¥1.000.000!\fVai querer!",
-  ["TEXT_S64_4ACF"] = "Tsc! Pensei que\na molecada de hoje\vtinha dinheiro…",
+  ["TEXT_S64_4ACF"] = "Tch! Achei que as\ncrianças de hoje em\vdia fossem ricas…",
   ["TEXT_S64_4AFC"] = "Não quer? Então\nfora daqui. Xô!",
   ["TEXT_S64_4B21"] = "Uau!\fVocê me fez perder\naquele peixe!",
   ["TEXT_S64_4B44"] = "Splash!",
-  ["TEXT_S64_4B4E"] = "Calmo, concentrado\nA essência da\fpesca e dos\nPOKéMON é a\vmesma.",
+  ["TEXT_S64_4B4E"] = "Calmo, sereno…\nA essência de pescar\ve de POKéMON é\va mesma.",
+  ["TEXT_S64_4B8F"] = "Eu sou muito bom\nem pescar e em\vPOKéMON.\fNão vou perder\npra criança\vnenhuma!",
   ["TEXT_S64_4BDA"] = "Tch! Quis apressar\nas coisas…",
   ["TEXT_S64_4BF8"] = "Pescar é paixão\nde uma vida.\fPOKéMON são amigos\nde uma vida!",
+  ["TEXT_S64_4C37"] = "Um, dois, três…\nMuahahaha, que bela\vpescaria!\fTerminei! Vá em\nfrente e pegue o\vquanto puder!",
   ["TEXT_S64_4DCF"] = "Meus POKéMON?\nRecém-pescados!",
+  ["TEXT_S64_4DE9"] = "SPLASH?",
   ["TEXT_S64_4DF2"] = "POKéMON\nrecém-pegos não\vsão\fpáreo para os bem\ncriados.",
   ["TEXT_S64_4E2E"] = "Nunca vi você\npor aqui antes.\fEntão você se acha\nbem durão?",
   ["TEXT_S64_4E73"] = "Você é forte!",
@@ -10855,6 +10854,7 @@ return {
   ["TEXT_S6A_664B"] = "Nos dias de sol,\nacho que\fas crianças\nprefeririam\vbrincar no pátio\fa estudar na sala\nde aula.",
   ["TEXT_S6A_66B3"] = "Eu não queria\nperder…",
   ["TEXT_S6A_66CA"] = "Estudar é\nimportante, mas se\vexercitar também.",
+  ["TEXT_S6A_6703"] = "Espera. Preciso\nligar pra mamãe",
   ["TEXT_S6A_6725"] = "Desculpe, mãe!\nEu apanhei!",
   ["TEXT_S6A_6740"] = "Minha mãe se\npreocupa demais\feu tenho que ligar\ntoda hora.",
   ["TEXT_S6A_6784"] = "Vamos batalhar.\nNão vou perder!",
