@@ -1,5 +1,10 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.56.0] - 2026-08-28
+### Corrigido
+- Mapeamento e tradução de ponteiros de falas de derrota de treinadores (`winText`), incluindo Rocket Grunts em Slowpoke Well (`"Você foi bem hoje pirralho, mas espere a próxima!"`).
+- Mapeamento de 83 ponteiros adicionais de diálogos de mapa, eventos e início/fim de batalhas em `lang/dialogue.lua`.
+
 ## [0.55.0] - 2026-08-28
 ### Corrigido
 - Glifo `Í` (maiúsculo com acento agudo) aprimorado em `assets/font/latin.png` para visualização limpa e correta de `LÍDER`.
