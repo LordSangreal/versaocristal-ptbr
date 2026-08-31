@@ -1,5 +1,9 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.8] - 2026-08-31
+### Aprimorado e Corrigido
+- Auditoria geral de limites de linhas (17 chars antes de `\v`) e quebras de caixa (máximo de 2 linhas por parágrafo).
+
 ## [0.57.7] - 2026-08-31
 ### Aprimorado e Corrigido
 - Ajustado gênero em diálogos ("uma vendedora de loja", "fiquei tonta").
