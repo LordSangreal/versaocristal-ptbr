@@ -1,5 +1,10 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.7] - 2026-08-31
+### Aprimorado e Corrigido
+- Ajustado gênero em diálogos ("uma vendedora de loja", "fiquei tonta").
+- Corrigida pontuação em diálogos e placas (restaurante, rádio, Mr. Fuji e Soul House).
+
 ## [0.57.6] - 2026-08-31
 ### Aprimorado e Corrigido
 - Ajustada a frase do Designer do Jogo para "Completar a sua POKéDEX é difícil, mas não desista!".
