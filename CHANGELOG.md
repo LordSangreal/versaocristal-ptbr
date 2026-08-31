@@ -1,5 +1,9 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.5] - 2026-08-31
+### Aprimorado e Corrigido
+- Removida repetição/redundância de "muita coisa" no e-mail do PC da Mansão de Celadon.
+
 ## [0.57.4] - 2026-08-31
 ### Aprimorado e Corrigido
 - Substituído "foi lacrado" por "foi interditado" no aviso da Polícia de Celadon na Rota 7.
