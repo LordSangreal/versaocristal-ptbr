@@ -1,5 +1,9 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.6] - 2026-08-31
+### Aprimorado e Corrigido
+- Ajustada a frase do Designer do Jogo para "Completar a sua POKéDEX é difícil, mas não desista!".
+
 ## [0.57.5] - 2026-08-31
 ### Aprimorado e Corrigido
 - Removida repetição/redundância de "muita coisa" no e-mail do PC da Mansão de Celadon.
