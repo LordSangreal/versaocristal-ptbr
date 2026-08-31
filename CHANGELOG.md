@@ -1,5 +1,11 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.1] - 2026-08-31
+### Aprimorado e Corrigido
+- Padronização de todas as 16 placas de Ginásio para o formato `GINÁSIO POKéMON DE [CIDADE]`.
+- Correção de placas de polícia (`POLÍCIA DE CELADON`, etc.), lojas e cassinos.
+- Ajustado título do Lt. Surge para `O Relâmpago Americano` e ortografia de `sem graça`.
+
 ## [0.57.0] - 2026-08-31
 ### Aprimorado e Corrigido
 - **Alinhamento e Desenho dos Glifos**: Linha de base de todas as letras acentuadas (minúsculas e maiúsculas) elevada para a linha 6 em `assets/font/latin.png`, eliminando o degrau de 1px.
