@@ -1,5 +1,12 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.0] - 2026-08-31
+### Aprimorado e Corrigido
+- **Alinhamento e Desenho dos Glifos**: Linha de base de todas as letras acentuadas (minúsculas e maiúsculas) elevada para a linha 6 em `assets/font/latin.png`, eliminando o degrau de 1px.
+- **Redesenho do `Ã` e Maiúsculas Acentuadas**: `Ã`, `Á`, `Â`, `À`, `É`, `Ê`, `Í`, `Ó`, `Ô`, `Õ`, `Ú`, `Ç` desenhados mantendo a fidelidade tipográfica do Game Boy.
+- **Correção da Seta de Rolagem (▼)**: Ajustadas quebras de linha em diálogos com 18 caracteres anteriores a `\v`, prevenindo sobreposição do cursor na última letra.
+- **Padronização de HMs e Ações no Mapa**: Mensagens de campo e diálogos padronizados para português (`CORTAR`, `SURFAR`, `FORÇA`, `CLARÃO`, `REDEMOINHO`, `CACHOEIRA`, `VOAR`, `CAVAR`, `CABEÇADA`).
+
 ## [0.56.0] - 2026-08-28
 ### Corrigido
 - Mapeamento e tradução de ponteiros de falas de derrota de treinadores (`winText`), incluindo Rocket Grunts em Slowpoke Well (`"Você foi bem hoje pirralho, mas espere a próxima!"`).
