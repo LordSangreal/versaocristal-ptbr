@@ -1,5 +1,9 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.2] - 2026-08-31
+### Aprimorado e Corrigido
+- Padronização de todas as placas e diálogos de lojas de departamento para `LOJA de DEP. de [CIDADE]`.
+
 ## [0.57.1] - 2026-08-31
 ### Aprimorado e Corrigido
 - Padronização de todas as 16 placas de Ginásio para o formato `GINÁSIO POKéMON DE [CIDADE]`.
