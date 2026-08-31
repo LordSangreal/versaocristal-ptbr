@@ -1,5 +1,9 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.4] - 2026-08-31
+### Aprimorado e Corrigido
+- Substituído "foi lacrado" por "foi interditado" no aviso da Polícia de Celadon na Rota 7.
+
 ## [0.57.3] - 2026-08-31
 ### Aprimorado e Corrigido
 - Correção de concordância de gênero em diálogos de personagens femininas (`nunca me sinto sozinha`, etc.).
