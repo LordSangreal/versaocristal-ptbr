@@ -1,5 +1,9 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.3] - 2026-08-31
+### Aprimorado e Corrigido
+- Correção de concordância de gênero em diálogos de personagens femininas (`nunca me sinto sozinha`, etc.).
+
 ## [0.57.2] - 2026-08-31
 ### Aprimorado e Corrigido
 - Padronização de todas as placas e diálogos de lojas de departamento para `LOJA de DEP. de [CIDADE]`.
