@@ -11,7 +11,7 @@
       "id": "versaocristal",
       "title": "Versao Cristal",
       "author": "LordSangreal",
-      "version": "0.47.1",
+      "version": "0.57.9",
       "categories": [
         "LANGUAGE"
       ],
@@ -33,15 +33,15 @@
       ],
       "description_url": "data/mods/LordSangreal@versaocristal/description.md",
       "latest": {
-        "version": "0.47.1",
-        "tag": "v0.47.1",
-        "name": "Versao Cristal 0.47.1 -- dialogos do Prof. Elm e conclusao do Bank 1E",
+        "version": "0.57.9",
+        "tag": "v0.57.9",
+        "name": "Versao Cristal 0.57.9 -- compatibilidade com custom carts",
         "prerelease": false,
-        "published_at": "2026-08-24T19:15:00Z",
+        "published_at": "2026-09-05T17:15:00Z",
         "zip": {
-          "name": "versaocristal-0.47.1.zip",
-          "url": "https://github.com/LordSangreal/versaocristal/releases/download/v0.47.1/versaocristal-0.47.1.zip",
-          "size": 450463
+          "name": "versaocristal-0.57.9.zip",
+          "url": "https://github.com/LordSangreal/versaocristal/releases/download/v0.57.9/versaocristal-0.57.9.zip",
+          "size": 494747
         }
       },
       "update_check": "ok"

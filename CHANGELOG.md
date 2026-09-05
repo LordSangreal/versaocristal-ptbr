@@ -1,5 +1,9 @@
 # Changelog - Versão Cristal PT-BR
 
+## [0.57.9] - 2026-09-05
+### Aprimorado e Corrigido
+- Padronização do identificador de repositório para `LordSangreal/versaocristal` para compatibilidade com custom carts no Gen1Recomp.
+
 ## [0.57.8] - 2026-08-31
 ### Aprimorado e Corrigido
 - Auditoria geral de limites de linhas (17 chars antes de `\v`) e quebras de caixa (máximo de 2 linhas por parágrafo).
