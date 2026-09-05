@@ -38,7 +38,7 @@ O problema aparece no detalhe. **Centenas de rotulos existem nos dois jogos com 
 
 Dai a separacao:
 
-| | `versaodourada` | `versaocristal-ptbr` (aqui) |
+| | `versaodourada` | `versaocristal` (aqui) |
 |---|---|---|
 | Jogo | Gold / Silver | Crystal |
 | Motores | `gen1recomp` e Gen2Recomped | `gen1recomp` e Gen2Recomped |

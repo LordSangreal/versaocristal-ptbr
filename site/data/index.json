@@ -15,7 +15,7 @@
       "categories": [
         "LANGUAGE"
       ],
-      "repo": "https://github.com/LordSangreal/versaocristal-ptbr",
+      "repo": "https://github.com/LordSangreal/versaocristal",
       "summary": "Pokemon Crystal em portugues brasileiro. Traducao propria; nomes de golpes no original.",
       "tags": [
         "portuguese",
@@ -24,7 +24,7 @@
         "crystal",
         "gen2"
       ],
-      "github": "LordSangreal/versaocristal-ptbr",
+      "github": "LordSangreal/versaocristal",
       "permissions": [],
       "api": 2,
       "profile": "content",
@@ -40,7 +40,7 @@
         "published_at": "2026-08-24T19:15:00Z",
         "zip": {
           "name": "versaocristal-0.47.1.zip",
-          "url": "https://github.com/LordSangreal/versaocristal-ptbr/releases/download/v0.47.1/versaocristal-0.47.1.zip",
+          "url": "https://github.com/LordSangreal/versaocristal/releases/download/v0.47.1/versaocristal-0.47.1.zip",
           "size": 450463
         }
       },
